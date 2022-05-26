@@ -11,22 +11,40 @@ html {
 }
 
 body {
+  position: relative;
   font-family: Inter, sans-serif;
-  color: $second-color;
 
-  background-color: gray;
+  color: $second-color;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
   list-style: none;
 }
 
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-height: 100%;
+  height: auto;
+}
+
 .container {
-  width: 1210px;
+  max-width: 1324px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 72px;
 }
