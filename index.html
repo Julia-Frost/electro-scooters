@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-trans - Электротранспорт</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <a class="logo" href="" alt="Логотип E-trans">
-          <svg class="logo__icon">
-            <use href="./img/svg-icons.svg#logo"></use>
-          </svg>
+          <span class="logo__letter">E</span>-trans
         </a>
         <nav class="header__navigation navigation">
           <ul class="navigation__list">
@@ -40,7 +42,208 @@
         </a>
       </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title"><span class="logo__letter">E</span>-trans</h1>
+          <p class="hero__subtitle">Начни двигаться по новому</p>
+          <button class="hero__button" type="button">Узнать больше</button>
+        </div>
+      </section>
+      <section class="product">
+        <div class="container">
+          <ul class="product__list">
+            <li class="product__item" id="gyroscooter">
+              <img
+                class="product__image"
+                src="./img/gyroscooter.png"
+                alt="гироскутер"
+              />
+              <div class="product__wrap">
+                <h2 class="product__title">Гироскутер</h2>
+                <p class="product__description">
+                  Гироскутер — уличное электрическое транспортное средство,
+                  выполненное в форме двух соединённых поперечных площадок для
+                  ступней, подвижных относительно друг друга, с колёсами по
+                  бокам. Использует электродвигатели, питаемые от...
+                </p>
+                <p class="product__description--hovered">
+                  Гироскутер — уличное электрическое транспортное средство,
+                  выполненное в форме двух соединённых поперечных площадок для
+                  ступней, подвижных относительно друг друга, с колёсами по
+                  бокам. Использует электродвигатели, питаемые от
+                  электроаккумулятора, и ряд гироскопических датчиков для
+                  самобалансировки и поддержания горизонтального положения
+                  площадки для ног.
+                </p>
+                <button class="product__dutton" type="button">Выбрать</button>
+              </div>
+            </li>
+            <li class="product__item" id="monowheels">
+              <img
+                class="product__image"
+                src="./img/monowheels.png"
+                alt="моноколесо"
+              />
+              <div class="product__wrap">
+                <h2 class="product__title">Моноколесо</h2>
+                <p class="product__description">
+                  Электрический самобалансирующийся уницикл (моноцикл) с одним
+                  колесом и расположенными по обе стороны от колеса подножками.
+                  Моноколесо является глубокой модернизацией Segway —
+                  электрическое самобалансирующееся транспортноe...
+                </p>
+                <p class="product__description--hovered">
+                  Электрический самобалансирующийся уницикл (моноцикл) с одним
+                  колесом и расположенными по обе стороны от колеса подножками.
+                  Моноколесо является глубокой модернизацией Segway —
+                  электрическое самобалансирующееся транспортное средство
+                  компании Segway с двумя колёсами, расположенными по обе
+                  стороны от водителя, внешне напоминающее колесницу. Изобретено
+                  Шейном Ченом.
+                </p>
+                <button class="product__dutton" type="button">Выбрать</button>
+              </div>
+            </li>
+            <li class="product__item" id="electroscooter">
+              <img
+                class="product__image"
+                src="./img/electroscooter.png"
+                alt="електроскутер"
+              />
+              <div class="product__wrap">
+                <h2 class="product__title">Электросамокат</h2>
+                <p class="product__description">
+                  Работает электросамокат следующим образом. Аккумуляторная
+                  батарея приводит в действие электродвигатель, конкретные
+                  параметры его работы зависят от установленного режима. Режимом
+                  работы управляет контроллер, который
+                </p>
+                <p class="product__description--hovered">
+                  Работает электросамокат следующим образом. Аккумуляторная
+                  батарея приводит в действие электродвигатель, конкретные
+                  параметры его работы зависят от установленного режима. Режимом
+                  работы управляет контроллер, который ориентируется на команды
+                  водителя, отдаваемые с рукоятки акселератора и информацию с
+                  датчиков. Электродвигатель формирует вращательный момент,
+                  передающийся на колесо. Колеса вращаются, самокат движется, вы
+                  едете.
+                </p>
+                <button class="product__dutton" type="button">Выбрать</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container">
+          <h2 class="contacts__title">Как нас найти?</h2>
+          <div class="contacts__content">
+            <div class="contacts__wrap">
+              <address class="contacts__address address">
+                <p class="address__text">
+                  г.Бендерштат, ул.С.Бандери 24/2<br />1 этаж
+                </p>
+                <ul class="address__list">
+                  <li class="address__item">
+                    <a class="address__link" href="tel:+3808000000">
+                      <svg class="address__icon">
+                        <use href="./img/svg-icons.svg#call"></use></svg
+                      >+3808000000
+                    </a>
+                  </li>
+                  <li class="address__item">
+                    <a class="address__link" href="mailto:ETrans@gmail.com">
+                      <svg class="address__icon">
+                        <use href="./img/svg-icons.svg#email"></use></svg
+                      >ETrans@gmail.com
+                    </a>
+                  </li>
+                </ul>
+              </address>
+              <div class="contacts__social social">
+                <ul class="social__list">
+                  <li class="social__item">
+                    <svg class="social__icon">
+                      <use href="./img/svg-icons.svg#twitter"></use>
+                    </svg>
+                  </li>
+                  <li class="social__item">
+                    <svg class="social__icon">
+                      <use href="./img/svg-icons.svg#telegram"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+              <div class="contacts__map">
+                <map name=""></map>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <a class="footer__logo logo" href="" alt="Логотип E-trans">
+          <span class="logo__letter">E</span>-trans
+        </a>
+        <div class="footer__content">
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <a class="footer-list__link" href="#gyroscooter">Гироскутеры</a>
+            </li>
+            <li class="footer-list__item">
+              <a class="footer-list__link" href="#monowheels">Моноколеса</a>
+            </li>
+            <li class="footer-list__item">
+              <a class="footer-list__link" href="#electroscooter"
+                >Электросамокты</a
+              >
+            </li>
+          </ul>
+          <div class="footer-adress">
+            <h3 class="footer-adress__title">Адрес магазина:</h3>
+            <p class="footer-adress__text">
+              г.Бендерштат, ул.С.Бандери 24/2<br />1 этаж
+            </p>
+          </div>
+          <div class="footer-contacts">
+            <h3 class="footer-contacts__text">Контакты:</h3>
+            <ul class="footer-contacts__list">
+              <li class="footer-contacts__item">
+                <a class="footer-contacts__link" href="tel:+3808000000">
+                  <svg class="footer-contacts__icon">
+                    <use href="./img/svg-icons.svg#call"></use></svg
+                  >+3808000000
+                </a>
+              </li>
+              <li class="footer-contacts__item">
+                <a class="footer-contacts__link" href="mailto:ETrans@gmail.com">
+                  <svg class="footer-contacts__icon">
+                    <use href="./img/svg-icons.svg#email"></use></svg
+                  >ETrans@gmail.com
+                </a>
+              </li>
+            </ul>
+            <div class="footer-contacts social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <svg class="social__icon">
+                    <use href="./img/svg-icons.svg#twitter"></use>
+                  </svg>
+                </li>
+                <li class="social__item">
+                  <svg class="social__icon">
+                    <use href="./img/svg-icons.svg#telegram"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="footer__copyright">© E-Trans, 2022</p>
+      </div>
+    </footer>
   </body>
 </html>
