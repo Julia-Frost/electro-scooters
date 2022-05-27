@@ -28,8 +28,7 @@
   }
   &:hover,
   &:focus {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15),
-      0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
+    text-shadow: $hover-shadow;
   }
 }
 
@@ -46,6 +45,16 @@
   font-size: 18px;
   line-height: 1.2;
   color: $first-color;
+  transition: color $main-animation, text-shadow $main-animation,
+    transform $main-animation, font-weight $main-animation;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  color: $accent-color;
+  text-shadow: $main-shadow;
+  transform: scale(1.2);
+  font-weight: 500;
 }
 
 .header__contact {
@@ -55,10 +64,24 @@
   font-size: 18px;
   line-height: 1.2;
   color: $first-color;
+  transition: color $main-animation, text-shadow $main-animation,
+    transform $main-animation;
 }
 
 .header__phone-icon {
   width: 24px;
   height: 24px;
+
   fill: $accent-color;
+  transition: fill $main-animation;
+}
+
+.header__contact:hover,
+.header__contact:focus,
+.header__contact:hover > .header__phone-icon,
+.header__contact:focus > .header__phone-icon {
+  color: $hover-color;
+  text-shadow: $main-shadow;
+  transform: scale(1.2);
+  fill: $hover-color;
 }

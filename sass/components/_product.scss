@@ -3,9 +3,6 @@
   padding-bottom: 120px;
 }
 
-.product__list {
-}
-
 .product__item {
   display: flex;
   justify-content: space-between;
@@ -43,9 +40,12 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+  transition: overflow 1000ms;
 }
-
-.product__dutton {
+// .product__wrap:hover > .product__description {
+//   overflow: visible;
+// }
+.product__button {
   padding: 23px 132px;
 
   font-weight: 700;
@@ -55,6 +55,3 @@
   border-radius: 8px;
   margin-top: 40px;
 }
-//
-// product__image
-//

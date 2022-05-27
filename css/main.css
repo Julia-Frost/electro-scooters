@@ -76,8 +76,8 @@ svg {
   font-size: 32px;
   line-height: 1;
   color: #ffffff;
-  -webkit-transition: text-shadow 300ms linear;
-  transition: text-shadow 300ms linear;
+  -webkit-transition: text-shadow 250ms linear;
+  transition: text-shadow 250ms linear;
 }
 .logo__letter {
   color: #b8ff20;
@@ -100,6 +100,19 @@ svg {
   font-size: 18px;
   line-height: 1.2;
   color: #ffffff;
+  -webkit-transition: color 250ms linear, text-shadow 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
+  transition: color 250ms linear, text-shadow 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
+  transition: color 250ms linear, text-shadow 250ms linear, transform 250ms linear, font-weight 250ms linear;
+  transition: color 250ms linear, text-shadow 250ms linear, transform 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  color: #b8ff20;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  font-weight: 500;
 }
 
 .header__contact {
@@ -113,12 +126,29 @@ svg {
   font-size: 18px;
   line-height: 1.2;
   color: #ffffff;
+  -webkit-transition: color 250ms linear, text-shadow 250ms linear, -webkit-transform 250ms linear;
+  transition: color 250ms linear, text-shadow 250ms linear, -webkit-transform 250ms linear;
+  transition: color 250ms linear, text-shadow 250ms linear, transform 250ms linear;
+  transition: color 250ms linear, text-shadow 250ms linear, transform 250ms linear, -webkit-transform 250ms linear;
 }
 
 .header__phone-icon {
   width: 24px;
   height: 24px;
   fill: #b8ff20;
+  -webkit-transition: fill 250ms linear;
+  transition: fill 250ms linear;
+}
+
+.header__contact:hover,
+.header__contact:focus,
+.header__contact:hover > .header__phone-icon,
+.header__contact:focus > .header__phone-icon {
+  color: #cdf478;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  fill: #cdf478;
 }
 
 .hero {
@@ -148,8 +178,32 @@ svg {
   font-size: 26px;
   line-height: 1.2;
   padding: 23px 90px;
+  border: 4px solid transparent;
   border-radius: 8px;
   background-color: #ffffff;
+  -webkit-transition: background-color 250ms linear, border-color 250ms linear, -webkit-box-shadow 250ms linear, -webkit-animation 250ms linear;
+  transition: background-color 250ms linear, border-color 250ms linear, -webkit-box-shadow 250ms linear, -webkit-animation 250ms linear;
+  transition: background-color 250ms linear, box-shadow 250ms linear, border-color 250ms linear, animation 250ms linear;
+  transition: background-color 250ms linear, box-shadow 250ms linear, border-color 250ms linear, animation 250ms linear, -webkit-box-shadow 250ms linear, -webkit-animation 250ms linear;
+}
+
+.hero__button:focus {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: #b8ff20;
+  outline: 0;
+}
+
+.hero__button:hover {
+  background-color: #cdf478;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hero__button:active {
+  background-color: #b8ff20;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .product {
@@ -204,9 +258,11 @@ svg {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+  -webkit-transition: overflow 1000ms;
+  transition: overflow 1000ms;
 }
 
-.product__dutton {
+.product__button {
   padding: 23px 132px;
   font-weight: 700;
   font-size: 26px;
@@ -270,11 +326,26 @@ svg {
   gap: 3px;
   font-size: 18px;
   line-height: 1.2;
+  -webkit-transition: text-shadow 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
+  transition: text-shadow 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
+  transition: text-shadow 250ms linear, transform 250ms linear, font-weight 250ms linear;
+  transition: text-shadow 250ms linear, transform 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
+}
+
+.address__link:hover,
+.address__link:hover,
+.address__link:hover > .address__icon,
+.address__link:hover > .address__icon {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  font-weight: 500;
 }
 
 .address__icon {
   width: 24px;
   height: 24px;
+  fill: #b8ff20;
 }
 
 .social__list {
@@ -299,6 +370,20 @@ svg {
   fill: #ffffff;
   width: 46px;
   height: 46px;
+  outline: 0 solid #b8ff20;
+  -webkit-transition: background-color 250ms linear, outline 250ms linear, outline-offset 250ms linear;
+  transition: background-color 250ms linear, outline 250ms linear, outline-offset 250ms linear;
+}
+
+.social-link:focus {
+  outline: 2px solid #b8ff20;
+  outline-offset: 3px;
+}
+
+.social-link:hover {
+  background-color: #cdf478;
+  outline: 2px solid #b8ff20;
+  outline-offset: 3px;
 }
 
 .contacts__map-wraper {
@@ -346,9 +431,22 @@ svg {
 }
 
 .footer-list__link {
+  display: inline-block;
   font-size: 18px;
   line-height: 1.2;
   color: #ffffff;
+  -webkit-transition: color 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
+  transition: color 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
+  transition: color 250ms linear, transform 250ms linear, font-weight 250ms linear;
+  transition: color 250ms linear, transform 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
+}
+
+.footer-list__link:hover,
+.footer-list__link:focus {
+  color: #cdf478;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  font-weight: 500;
 }
 
 .footer-adress {
@@ -404,9 +502,22 @@ svg {
 }
 
 .footer-contacts__link {
+  display: inline-block;
   font-size: 18px;
   line-height: 1.2;
   color: #ffffff;
+  -webkit-transition: color 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
+  transition: color 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
+  transition: color 250ms linear, transform 250ms linear, font-weight 250ms linear;
+  transition: color 250ms linear, transform 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
+}
+
+.footer-contacts__link:hover,
+.footer-contacts__link:focus {
+  color: #cdf478;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  font-weight: 500;
 }
 
 .footer__copyright {

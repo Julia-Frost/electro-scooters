@@ -25,6 +25,25 @@
   font-size: 26px;
   line-height: 1.2;
   padding: 23px 90px;
+  border: 4px solid transparent;
+
   border-radius: 8px;
   background-color: $first-color;
+  transition: background-color $main-animation, box-shadow $main-animation,
+    border-color $main-animation, animation $main-animation;
+}
+
+.hero__button:focus {
+  box-shadow: $hover-shadow;
+  border-color: $accent-color;
+  outline: 0;
+}
+.hero__button:hover {
+  background-color: $hover-color;
+  box-shadow: $hover-shadow;
+}
+
+.hero__button:active {
+  background-color: $accent-color;
+  box-shadow: $hover-shadow;
 }
