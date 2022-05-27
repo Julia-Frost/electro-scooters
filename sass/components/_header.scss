@@ -17,6 +17,7 @@
 }
 
 .logo {
+  display: inline-block;
   font-weight: 700;
   font-size: 32px;
   line-height: 1;
@@ -34,10 +35,9 @@
 
 .navigation__list {
   display: flex;
+  gap: 40px;
 }
-.navigation__item:not(:last-child) {
-  margin-right: 40px;
-}
+
 .navigation__link {
   display: block;
   padding-top: 32px;
@@ -60,4 +60,5 @@
 .header__phone-icon {
   width: 24px;
   height: 24px;
+  fill: $accent-color;
 }

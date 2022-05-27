@@ -59,18 +59,10 @@
                 class="product__image"
                 src="./img/gyroscooter.png"
                 alt="гироскутер"
-                width="470"
-                height="370"
               />
               <div class="product__wrap">
                 <h2 class="product__title">Гироскутер</h2>
                 <p class="product__description">
-                  Гироскутер — уличное электрическое транспортное средство,
-                  выполненное в форме двух соединённых поперечных площадок для
-                  ступней, подвижных относительно друг друга, с колёсами по
-                  бокам. Использует электродвигатели, питаемые от...
-                </p>
-                <p class="product__description product__description--hovered">
                   Гироскутер — уличное электрическое транспортное средство,
                   выполненное в форме двух соединённых поперечных площадок для
                   ступней, подвижных относительно друг друга, с колёсами по
@@ -87,18 +79,10 @@
                 class="product__image"
                 src="./img/monowheels.png"
                 alt="моноколесо"
-                width="470"
-                height="370"
               />
               <div class="product__wrap">
                 <h2 class="product__title">Моноколесо</h2>
                 <p class="product__description">
-                  Электрический самобалансирующийся уницикл (моноцикл) с одним
-                  колесом и расположенными по обе стороны от колеса подножками.
-                  Моноколесо является глубокой модернизацией Segway —
-                  электрическое самобалансирующееся транспортноe...
-                </p>
-                <p class="product__description product__description--hovered">
                   Электрический самобалансирующийся уницикл (моноцикл) с одним
                   колесом и расположенными по обе стороны от колеса подножками.
                   Моноколесо является глубокой модернизацией Segway —
@@ -115,18 +99,10 @@
                 class="product__image"
                 src="./img/electroscooter.png"
                 alt="електроскутер"
-                width="470"
-                height="370"
               />
               <div class="product__wrap">
                 <h2 class="product__title">Электросамокат</h2>
                 <p class="product__description">
-                  Работает электросамокат следующим образом. Аккумуляторная
-                  батарея приводит в действие электродвигатель, конкретные
-                  параметры его работы зависят от установленного режима. Режимом
-                  работы управляет контроллер, который
-                </p>
-                <p class="product__description product__description--hovered">
                   Работает электросамокат следующим образом. Аккумуляторная
                   батарея приводит в действие электродвигатель, конкретные
                   параметры его работы зависят от установленного режима. Режимом
@@ -145,53 +121,58 @@
       <section class="contacts">
         <div class="container">
           <h2 class="contacts__title">Как нас найти?</h2>
-          <div class="contacts__content">
-            <div class="contacts__wrap">
-              <address class="contacts__address address">
-                <p class="address__text">
-                  г.Бендерштат, ул.С.Бандери 24/2<br />1 этаж
-                </p>
-                <ul class="address__list">
-                  <li class="address__item">
-                    <a class="address__link" href="tel:+3808000000">
-                      <svg class="address__icon">
-                        <use href="./img/svg-icons.svg#call"></use></svg
-                      >+3808000000
-                    </a>
-                  </li>
-                  <li class="address__item">
-                    <a class="address__link" href="mailto:ETrans@gmail.com">
-                      <svg class="address__icon">
-                        <use href="./img/svg-icons.svg#email"></use></svg
-                      >ETrans@gmail.com
-                    </a>
-                  </li>
-                </ul>
-              </address>
+        </div>
+
+        <div class="contacts__content">
+          <div class="contacts__wrap container">
+            <address class="contacts__address address">
+              <p class="address__text">
+                г.Бендерштат, ул.С.Бандери 24/2<br />1 этаж
+              </p>
+              <ul class="address__list">
+                <li class="address__item">
+                  <a class="address__link" href="tel:+3808000000">
+                    <svg class="address__icon">
+                      <use href="./img/svg-icons.svg#call"></use></svg
+                    >+3808000000
+                  </a>
+                </li>
+                <li class="address__item">
+                  <a class="address__link" href="mailto:ETrans@gmail.com">
+                    <svg class="address__icon">
+                      <use href="./img/svg-icons.svg#email"></use></svg
+                    >ETrans@gmail.com
+                  </a>
+                </li>
+              </ul>
               <div class="contacts__social social">
                 <ul class="social__list">
                   <li class="social__item">
-                    <svg class="social__icon">
-                      <use href="./img/svg-icons.svg#twitter"></use>
-                    </svg>
+                    <a class="social-link" href="">
+                      <svg class="social__icon" width="32" height="32">
+                        <use href="./img/svg-icons.svg#twitter"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="social__item">
-                    <svg class="social__icon">
-                      <use href="./img/svg-icons.svg#telegram"></use>
-                    </svg>
+                    <a class="social-link" href="">
+                      <svg class="social__icon" width="28" height="32">
+                        <use href="./img/svg-icons.svg#telegram"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
-              <div class="contacts__map">
-                <map name=""></map>
-              </div>
+            </address>
+            <div class="contacts__map-wraper">
+              <div class="contacts__map" id="map"></div>
             </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container footer__wrap">
         <a class="footer__logo logo" href="" alt="Логотип E-trans">
           <span class="logo__letter">E</span>-trans
         </a>
@@ -216,34 +197,34 @@
             </p>
           </div>
           <div class="footer-contacts">
-            <h3 class="footer-contacts__text">Контакты:</h3>
+            <h3 class="footer-contacts__title">Контакты:</h3>
             <ul class="footer-contacts__list">
               <li class="footer-contacts__item">
                 <a class="footer-contacts__link" href="tel:+3808000000">
-                  <svg class="footer-contacts__icon">
-                    <use href="./img/svg-icons.svg#call"></use></svg
-                  >+3808000000
+                  +380-800-00-00
                 </a>
               </li>
               <li class="footer-contacts__item">
                 <a class="footer-contacts__link" href="mailto:ETrans@gmail.com">
-                  <svg class="footer-contacts__icon">
-                    <use href="./img/svg-icons.svg#email"></use></svg
-                  >ETrans@gmail.com
+                  ETrans@gmail.com
                 </a>
               </li>
             </ul>
             <div class="footer-contacts social">
               <ul class="social__list">
                 <li class="social__item">
-                  <svg class="social__icon">
-                    <use href="./img/svg-icons.svg#twitter"></use>
-                  </svg>
+                  <a class="social-link" href="">
+                    <svg class="social__icon" width="32" height="32">
+                      <use href="./img/svg-icons.svg#twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social__item">
-                  <svg class="social__icon">
-                    <use href="./img/svg-icons.svg#telegram"></use>
-                  </svg>
+                  <a class="social-link" href="">
+                    <svg class="social__icon" width="28" height="32">
+                      <use href="./img/svg-icons.svg#telegram"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </div>
