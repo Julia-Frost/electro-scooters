@@ -88,7 +88,7 @@ svg {
   color: #b8ff20;
 }
 .logo:hover, .logo:focus {
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15);
 }
 
 .navigation__list {
@@ -179,13 +179,14 @@ svg {
 }
 
 .hero__button {
+  padding: 23px 90px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  padding: 23px 90px;
   border: 4px solid transparent;
   border-radius: 8px;
   background-color: #ffffff;
+  color: #18171a;
   -webkit-transition: background-color 250ms linear, border-color 250ms linear, -webkit-box-shadow 250ms linear, -webkit-animation 250ms linear;
   transition: background-color 250ms linear, border-color 250ms linear, -webkit-box-shadow 250ms linear, -webkit-animation 250ms linear;
   transition: background-color 250ms linear, box-shadow 250ms linear, border-color 250ms linear, animation 250ms linear;
@@ -193,22 +194,22 @@ svg {
 }
 
 .hero__button:focus {
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15);
   border-color: #b8ff20;
   outline: 0;
 }
 
 .hero__button:hover {
   background-color: #cdf478;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15);
 }
 
 .hero__button:active {
   background-color: #b8ff20;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15);
 }
 
 .product {
@@ -268,12 +269,40 @@ svg {
 
 .product__button {
   padding: 23px 132px;
+  margin-top: 40px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   background-color: #b8ff20;
+  color: #18171a;
+  border: 4px solid transparent;
   border-radius: 8px;
-  margin-top: 40px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: background-color 250ms linear, color 250ms linear, border-color 250ms linear, -webkit-box-shadow 250ms linear, -webkit-animation 250ms linear;
+  transition: background-color 250ms linear, color 250ms linear, border-color 250ms linear, -webkit-box-shadow 250ms linear, -webkit-animation 250ms linear;
+  transition: background-color 250ms linear, color 250ms linear, box-shadow 250ms linear, border-color 250ms linear, animation 250ms linear;
+  transition: background-color 250ms linear, color 250ms linear, box-shadow 250ms linear, border-color 250ms linear, animation 250ms linear, -webkit-box-shadow 250ms linear, -webkit-animation 250ms linear;
+}
+
+.product__button:focus {
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15);
+  border-color: #18171a;
+  outline: 0;
+}
+
+.product__button:hover {
+  background-color: #cdf478;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.product__button:active {
+  background-color: #18171a;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15), 0px 5px 5px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
 }
 
 .contacts__title {

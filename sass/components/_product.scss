@@ -49,11 +49,36 @@
 
 .product__button {
   padding: 23px 132px;
+  margin-top: 40px;
 
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+
   background-color: $accent-color;
+  color: $second-color;
+
+  border: 4px solid transparent;
   border-radius: 8px;
-  margin-top: 40px;
+  box-shadow: $main-shadow;
+
+  transition: background-color $main-animation, color $main-animation,
+    box-shadow $main-animation, border-color $main-animation,
+    animation $main-animation;
+}
+
+.product__button:focus {
+  box-shadow: $hover-shadow;
+  border-color: $second-color;
+  outline: 0;
+}
+.product__button:hover {
+  background-color: $hover-color;
+  box-shadow: $hover-shadow;
+}
+
+.product__button:active {
+  background-color: $second-color;
+  box-shadow: $hover-shadow;
+  color: $first-color;
 }

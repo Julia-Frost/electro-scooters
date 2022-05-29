@@ -21,14 +21,18 @@
 }
 
 .hero__button {
+  padding: 23px 90px;
+
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  padding: 23px 90px;
-  border: 4px solid transparent;
 
+  border: 4px solid transparent;
   border-radius: 8px;
+
   background-color: $first-color;
+  color: $second-color;
+
   transition: background-color $main-animation, box-shadow $main-animation,
     border-color $main-animation, animation $main-animation;
 }
