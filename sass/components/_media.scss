@@ -1,0 +1,147 @@
+@media (max-width: 1200px) {
+  .navigation__list {
+    gap: 20px;
+  }
+  .hero {
+    padding-top: 160px;
+    padding-bottom: 70px;
+  }
+  .product {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .product__image {
+    max-width: 380px;
+    max-height: 300px;
+  }
+  .product__title {
+    font-size: 54px;
+  }
+
+  .product__button {
+    margin-top: 20px;
+  }
+
+  .product__item:not(:last-child) {
+    margin-bottom: 80px;
+  }
+  .contacts__title {
+    font-size: 50px;
+  }
+  .footer__content {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .container {
+    padding: 0 30px;
+  }
+  .contacts__wrap {
+    padding-left: max(30px, (100% - 1180px)/2);
+    padding-right: 0;
+  }
+
+  .contacts__map-wraper {
+    width: calc(100% - 380px);
+  }
+}
+
+@media (max-width: 940px) {
+  body {
+    font-size: 14px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .navigation__list {
+    gap: 15px;
+  }
+
+  .hero {
+    padding-top: 150px;
+    padding-bottom: 80px;
+  }
+
+  .hero__title {
+    font-size: 80px;
+  }
+  .hero__subtitle {
+    font-size: 20px;
+  }
+
+  .hero__button {
+    padding: 14px 61px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .product {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .product__item {
+    gap: 10px;
+  }
+
+  .product__image {
+    max-width: 260px;
+    max-height: 206px;
+  }
+  .product__title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .product__button {
+    margin-top: 20px;
+    padding: 14px 90px;
+    font-size: 18px;
+  }
+
+  .product__item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+  .contacts__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .address__text {
+    font-size: 16px;
+  }
+
+  .contacts__address {
+    gap: 15px;
+  }
+  .social__list {
+    gap: 20px;
+  }
+
+  .contacts__map-wraper {
+    height: 230px;
+  }
+
+  .address__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .contacts__map-wraper {
+    width: calc(100% - 260px);
+  }
+
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .footer__logo {
+    font-size: 46px;
+    margin-bottom: 40px;
+  }
+  .footer__content {
+    gap: 80px;
+  }
+}

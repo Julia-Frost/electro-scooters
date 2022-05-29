@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 .product__item:not(:last-child) {
   margin-bottom: 120px;
@@ -34,8 +34,6 @@
 }
 
 .product__description {
-  font-weight: 400;
-  font-size: 18px;
   line-height: 1.5;
   overflow: hidden;
   display: -webkit-box;
@@ -53,7 +51,6 @@
 
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
 
   background-color: $accent-color;
   color: $second-color;

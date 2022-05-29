@@ -38,8 +38,6 @@
 .address__link {
   display: flex;
   gap: 3px;
-  font-size: 18px;
-  line-height: 1.2;
   transition: text-shadow $main-animation, transform $main-animation,
     font-weight $main-animation;
 }

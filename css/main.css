@@ -15,6 +15,8 @@ html {
 body {
   position: relative;
   font-family: Inter, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
   color: #18171a;
 }
 
@@ -102,8 +104,6 @@ svg {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-size: 18px;
-  line-height: 1.2;
   color: #ffffff;
   -webkit-transition: color 250ms linear, text-shadow 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
   transition: color 250ms linear, text-shadow 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
@@ -128,8 +128,6 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 1.2;
   color: #ffffff;
   -webkit-transition: color 250ms linear, text-shadow 250ms linear, -webkit-transform 250ms linear;
   transition: color 250ms linear, text-shadow 250ms linear, -webkit-transform 250ms linear;
@@ -172,7 +170,6 @@ svg {
 
 .hero__subtitle {
   font-size: 26px;
-  line-height: 1.2;
   color: #ffffff;
   margin-top: 10px;
   margin-bottom: 60px;
@@ -182,7 +179,6 @@ svg {
   padding: 23px 90px;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
   border: 4px solid transparent;
   border-radius: 8px;
   background-color: #ffffff;
@@ -228,7 +224,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .product__item:not(:last-child) {
@@ -258,8 +254,6 @@ svg {
 }
 
 .product__description {
-  font-weight: 400;
-  font-size: 18px;
   line-height: 1.5;
   overflow: hidden;
   display: -webkit-box;
@@ -272,7 +266,6 @@ svg {
   margin-top: 40px;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
   background-color: #b8ff20;
   color: #18171a;
   border: 4px solid transparent;
@@ -357,8 +350,6 @@ svg {
   display: -ms-flexbox;
   display: flex;
   gap: 3px;
-  font-size: 18px;
-  line-height: 1.2;
   -webkit-transition: text-shadow 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
   transition: text-shadow 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
   transition: text-shadow 250ms linear, transform 250ms linear, font-weight 250ms linear;
@@ -434,12 +425,14 @@ svg {
 
 .footer {
   background-color: #18171a;
+  color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .footer__logo {
   font-size: 46px;
   margin-bottom: 40px;
-  margin-top: 60px;
 }
 
 .footer__content {
@@ -465,9 +458,6 @@ svg {
 
 .footer-list__link {
   display: inline-block;
-  font-size: 18px;
-  line-height: 1.2;
-  color: #ffffff;
   -webkit-transition: color 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
   transition: color 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
   transition: color 250ms linear, transform 250ms linear, font-weight 250ms linear;
@@ -493,18 +483,6 @@ svg {
   gap: 10px;
 }
 
-.footer-adress__title {
-  font-size: 18px;
-  line-height: 1.2;
-  color: #ffffff;
-}
-
-.footer-adress__text {
-  font-size: 18px;
-  line-height: 1.2;
-  color: #ffffff;
-}
-
 .footer-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -516,9 +494,6 @@ svg {
 }
 
 .footer-contacts__title {
-  font-size: 18px;
-  line-height: 1.2;
-  color: #ffffff;
   margin-bottom: 10px;
 }
 
@@ -536,9 +511,6 @@ svg {
 
 .footer-contacts__link {
   display: inline-block;
-  font-size: 18px;
-  line-height: 1.2;
-  color: #ffffff;
   -webkit-transition: color 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
   transition: color 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
   transition: color 250ms linear, transform 250ms linear, font-weight 250ms linear;
@@ -556,8 +528,165 @@ svg {
 .footer__copyright {
   display: inline-block;
   font-size: 12px;
-  line-height: 130%;
-  color: #ffffff;
+  line-height: 1.3;
   margin-top: 18px;
-  margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+  .navigation__list {
+    gap: 20px;
+  }
+
+  .hero {
+    padding-top: 160px;
+    padding-bottom: 70px;
+  }
+
+  .product {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .product__image {
+    max-width: 380px;
+    max-height: 300px;
+  }
+
+  .product__title {
+    font-size: 54px;
+  }
+
+  .product__button {
+    margin-top: 20px;
+  }
+
+  .product__item:not(:last-child) {
+    margin-bottom: 80px;
+  }
+
+  .contacts__title {
+    font-size: 50px;
+  }
+
+  .footer__content {
+    gap: 80px;
+  }
+}
+@media (max-width: 1020px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .contacts__wrap {
+    padding-left: max(30px, (100% - 1180px) / 2);
+    padding-right: 0;
+  }
+
+  .contacts__map-wraper {
+    width: calc(100% - 380px);
+  }
+}
+@media (max-width: 940px) {
+  body {
+    font-size: 14px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .navigation__list {
+    gap: 15px;
+  }
+
+  .hero {
+    padding-top: 150px;
+    padding-bottom: 80px;
+  }
+
+  .hero__title {
+    font-size: 80px;
+  }
+
+  .hero__subtitle {
+    font-size: 20px;
+  }
+
+  .hero__button {
+    padding: 14px 61px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .product {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .product__item {
+    gap: 10px;
+  }
+
+  .product__image {
+    max-width: 260px;
+    max-height: 206px;
+  }
+
+  .product__title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .product__button {
+    margin-top: 20px;
+    padding: 14px 90px;
+    font-size: 18px;
+  }
+
+  .product__item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .contacts__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .address__text {
+    font-size: 16px;
+  }
+
+  .contacts__address {
+    gap: 15px;
+  }
+
+  .social__list {
+    gap: 20px;
+  }
+
+  .contacts__map-wraper {
+    height: 230px;
+  }
+
+  .address__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .contacts__map-wraper {
+    width: calc(100% - 260px);
+  }
+
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .footer__logo {
+    font-size: 46px;
+    margin-bottom: 40px;
+  }
+
+  .footer__content {
+    gap: 80px;
+  }
 }/*# sourceMappingURL=main.css.map */
