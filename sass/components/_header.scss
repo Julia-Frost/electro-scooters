@@ -10,9 +10,10 @@
   );
 
   &__content {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
     align-items: center;
+    gap: 15px;
   }
 }
 
@@ -56,6 +57,7 @@
 }
 
 .header__contact {
+  justify-self: end;
   display: flex;
   align-items: center;
   font-weight: 700;
