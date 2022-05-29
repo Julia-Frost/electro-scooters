@@ -50,6 +50,11 @@ svg {
   padding: 0 72px;
 }
 
+#map {
+  height: 100%;
+  font-family: inherit;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -212,6 +217,7 @@ svg {
 }
 
 .product__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,8 +264,6 @@ svg {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  -webkit-transition: overflow 1000ms;
-  transition: overflow 1000ms;
 }
 
 .product__button {

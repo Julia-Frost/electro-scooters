@@ -4,6 +4,7 @@
 }
 
 .product__item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,11 +41,12 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  transition: overflow 1000ms;
 }
-// .product__wrap:hover > .product__description {
-//   overflow: visible;
+
+// .product__wrap:hover .product__description {
+//   -webkit-line-clamp: unset;
 // }
+
 .product__button {
   padding: 23px 132px;
 
