@@ -530,6 +530,30 @@ svg {
   margin-top: 18px;
 }
 
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.modal__block {
+  position: relative;
+  width: 680px;
+  padding: 40px 15px;
+  margin: auto;
+  background-color: #fff;
+  cursor: default;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 1px solid #646464;
+  border-radius: 8px;
+}
+
 @media (max-width: 1200px) {
   .navigation__list {
     gap: 20px;
