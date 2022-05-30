@@ -38,6 +38,11 @@
   .container {
     padding: 0 30px;
   }
+
+  .header__content {
+    padding-top: 20px;
+    padding-bottom: 42px;
+  }
   .contacts__wrap {
     padding-left: max(30px, (100% - 1180px)/2);
     padding-right: 0;
@@ -154,7 +159,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 710px) {
   .header__content {
     grid-template-columns: 1fr 1fr;
     gap: 15px;
@@ -169,4 +174,94 @@
 }
 
 @media (max-width: 580px) {
+  .container {
+    padding: 0 15px;
+  }
+  .header__content {
+    padding-top: 16px;
+    padding-bottom: 18px;
+  }
+
+  .navigation__link {
+    font-size: 12px;
+  }
+
+  .header__contact {
+    font-size: 12px;
+  }
+
+  .header__phone-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .hero {
+    padding-top: 259px;
+    padding-bottom: 30px;
+    background-image: url("../img/hero-img-mobil.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .hero__title {
+    font-size: 50px;
+  }
+  .hero__subtitle {
+    margin-top: 4px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .hero__button {
+    max-width: 290px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .product__item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product__item:nth-child(2n) {
+    flex-direction: column;
+  }
+  .product__button {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 18px;
+  }
+  .product__wrap {
+    max-width: 290px;
+  }
+  .contacts__title {
+    margin-bottom: 15px;
+  }
+
+  .contacts__wrap {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .contacts__address {
+    width: 100%;
+    padding: 30px 15px;
+  }
+
+  .contacts__map-wraper {
+    width: 100%;
+  }
+
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .footer__logo {
+    margin-bottom: 30px;
+  }
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
