@@ -46,14 +46,13 @@
   color: $first-color;
   transition: color $main-animation, text-shadow $main-animation,
     transform $main-animation, font-weight $main-animation;
-}
-
-.navigation__link:hover,
-.navigation__link:focus {
-  color: $accent-color;
-  text-shadow: $main-shadow;
-  transform: scale(1.2);
-  font-weight: 500;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    text-shadow: $main-shadow;
+    transform: scale(1.2);
+    font-weight: 500;
+  }
 }
 
 .header__contact {

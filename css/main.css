@@ -107,9 +107,7 @@ svg {
   transition: color 250ms linear, text-shadow 250ms linear, transform 250ms linear, font-weight 250ms linear;
   transition: color 250ms linear, text-shadow 250ms linear, transform 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
 }
-
-.navigation__link:hover,
-.navigation__link:focus {
+.navigation__link:hover, .navigation__link:focus {
   color: #b8ff20;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   -webkit-transform: scale(1.2);
@@ -353,11 +351,7 @@ svg {
   transition: text-shadow 250ms linear, transform 250ms linear, font-weight 250ms linear;
   transition: text-shadow 250ms linear, transform 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
 }
-
-.address__link:hover,
-.address__link:hover,
-.address__link:hover > .address__icon,
-.address__link:hover > .address__icon {
+.address__link:hover, .address__link:hover, .address__link:hover > .address__icon, .address__link:hover > .address__icon {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -396,12 +390,10 @@ svg {
   -webkit-transition: background-color 250ms linear, outline 250ms linear, outline-offset 250ms linear;
   transition: background-color 250ms linear, outline 250ms linear, outline-offset 250ms linear;
 }
-
 .social-link:focus {
   outline: 2px solid #b8ff20;
   outline-offset: 3px;
 }
-
 .social-link:hover {
   background-color: #cdf478;
   outline: 2px solid #b8ff20;
@@ -427,12 +419,10 @@ svg {
   padding-top: 60px;
   padding-bottom: 30px;
 }
-
 .footer__logo {
   font-size: 46px;
   margin-bottom: 40px;
 }
-
 .footer__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -442,7 +432,6 @@ svg {
           align-items: baseline;
   gap: 120px;
 }
-
 .footer-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -453,7 +442,6 @@ svg {
           flex-direction: column;
   gap: 10px;
 }
-
 .footer-list__link {
   display: inline-block;
   -webkit-transition: color 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
@@ -461,15 +449,12 @@ svg {
   transition: color 250ms linear, transform 250ms linear, font-weight 250ms linear;
   transition: color 250ms linear, transform 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
 }
-
-.footer-list__link:hover,
-.footer-list__link:focus {
+.footer-list__link:hover, .footer-list__link:focus {
   color: #cdf478;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   font-weight: 500;
 }
-
 .footer-adress {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -480,7 +465,6 @@ svg {
           flex-direction: column;
   gap: 10px;
 }
-
 .footer-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -490,11 +474,9 @@ svg {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 .footer-contacts__title {
   margin-bottom: 10px;
 }
-
 .footer-contacts__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -506,7 +488,6 @@ svg {
   gap: 10px;
   margin-bottom: 20px;
 }
-
 .footer-contacts__link {
   display: inline-block;
   -webkit-transition: color 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
@@ -514,15 +495,12 @@ svg {
   transition: color 250ms linear, transform 250ms linear, font-weight 250ms linear;
   transition: color 250ms linear, transform 250ms linear, font-weight 250ms linear, -webkit-transform 250ms linear;
 }
-
-.footer-contacts__link:hover,
-.footer-contacts__link:focus {
+.footer-contacts__link:hover, .footer-contacts__link:focus {
   color: #cdf478;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   font-weight: 500;
 }
-
 .footer__copyright {
   display: inline-block;
   font-size: 12px;

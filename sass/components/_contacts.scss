@@ -40,15 +40,14 @@
   gap: 3px;
   transition: text-shadow $main-animation, transform $main-animation,
     font-weight $main-animation;
-}
-
-.address__link:hover,
-.address__link:hover,
-.address__link:hover > .address__icon,
-.address__link:hover > .address__icon {
-  text-shadow: $main-shadow;
-  transform: scale(1.2);
-  font-weight: 500;
+  &:hover,
+  &:hover,
+  &:hover > .address__icon,
+  &:hover > .address__icon {
+    text-shadow: $main-shadow;
+    transform: scale(1.2);
+    font-weight: 500;
+  }
 }
 
 .address__icon {
@@ -74,16 +73,15 @@
   outline: 0 solid $accent-color;
   transition: background-color $main-animation, outline $main-animation,
     outline-offset $main-animation;
-}
-
-.social-link:focus {
-  outline: 2px solid $accent-color;
-  outline-offset: 3px;
-}
-.social-link:hover {
-  background-color: $hover-color;
-  outline: 2px solid $accent-color;
-  outline-offset: 3px;
+  &:focus {
+    outline: 2px solid $accent-color;
+    outline-offset: 3px;
+  }
+  &:hover {
+    background-color: $hover-color;
+    outline: 2px solid $accent-color;
+    outline-offset: 3px;
+  }
 }
 
 .contacts__map-wraper {
