@@ -7,104 +7,101 @@
   cursor: pointer;
   overflow-x: hidden;
   overflow-y: auto;
-}
 
-.modal__block {
-  position: relative;
-  width: 580px;
-  padding: 40px 15px;
-  margin: auto;
-  background-color: #fff;
-  cursor: default;
+  &__block {
+    position: relative;
+    width: 580px;
+    padding: 40px 15px;
+    margin: auto;
+    background-color: #fff;
+    cursor: default;
 
-  border: 1px solid #646464;
-  border-radius: 8px;
-}
+    border: 1px solid #646464;
+    border-radius: 8px;
+  }
 
-.modal__container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  max-width: 440px;
-  margin: 0 auto;
-}
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 440px;
+    margin: 0 auto;
+  }
 
-.modal__close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: transparent;
-}
-.modal__title {
-  font-size: 30px;
-  line-height: 1.4;
-  text-align: center;
-  max-width: 380px;
-  color: $addition-color;
-}
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 1.4;
+    text-align: center;
+    max-width: 380px;
+    color: $addition-color;
+  }
 
-.modal__description {
-  font-size: 16px;
-}
+  &__description {
+    font-size: 16px;
+  }
 
-.modal__form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 100%;
-}
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
 
-.modal__text {
-  display: block;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
+  &__text {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
 
-.modal__input {
-  border: 1px solid $input-color;
-  border-radius: 6px;
-  width: 100%;
-  height: 50px;
-  padding: 15px;
-}
+  &__input {
+    border: 1px solid $input-color;
+    border-radius: 6px;
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    &::placeholder {
+      color: $input-color;
+    }
+  }
+  &__button {
+    padding: 15px 100px;
 
-.modal__input::placeholder {
-  color: $input-color;
-}
+    font-weight: 700;
+    font-size: 20px;
 
-.modal__button {
-  padding: 15px 100px;
+    background-color: $accent-color;
+    color: $second-color;
 
-  font-weight: 700;
-  font-size: 20px;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    box-shadow: $main-shadow;
 
-  background-color: $accent-color;
-  color: $second-color;
+    transition: background-color $main-animation, color $main-animation,
+      box-shadow $main-animation, border-color $main-animation,
+      animation $main-animation;
+    &:focus {
+      box-shadow: $hover-shadow;
+      border-color: $second-color;
+      outline: 0;
+    }
+    &:hover {
+      background-color: $hover-color;
+      box-shadow: $hover-shadow;
+    }
 
-  border: 4px solid transparent;
-  border-radius: 8px;
-  box-shadow: $main-shadow;
-
-  transition: background-color $main-animation, color $main-animation,
-    box-shadow $main-animation, border-color $main-animation,
-    animation $main-animation;
-}
-
-.modal__button:focus {
-  box-shadow: $hover-shadow;
-  border-color: $second-color;
-  outline: 0;
-}
-.modal__button:hover {
-  background-color: $hover-color;
-  box-shadow: $hover-shadow;
-}
-
-.modal__button:active {
-  background-color: $second-color;
-  box-shadow: $hover-shadow;
-  color: $first-color;
+    &:active {
+      background-color: $second-color;
+      box-shadow: $hover-shadow;
+      color: $first-color;
+    }
+  }
 }
 
 @media (max-width: 770px) {

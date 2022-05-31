@@ -9,23 +9,23 @@
   .product {
     padding-top: 80px;
     padding-bottom: 80px;
+
+    &__image {
+      max-width: 380px;
+      max-height: 300px;
+    }
+    &__title {
+      font-size: 54px;
+    }
+
+    &__button {
+      margin-top: 20px;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 80px;
+    }
   }
 
-  .product__image {
-    max-width: 380px;
-    max-height: 300px;
-  }
-  .product__title {
-    font-size: 54px;
-  }
-
-  .product__button {
-    margin-top: 20px;
-  }
-
-  .product__item:not(:last-child) {
-    margin-bottom: 80px;
-  }
   .contacts__title {
     font-size: 50px;
   }
@@ -69,47 +69,47 @@
   .hero {
     padding-top: 150px;
     padding-bottom: 80px;
-  }
+    &__title {
+      font-size: 80px;
+    }
+    &__subtitle {
+      font-size: 20px;
+    }
 
-  .hero__title {
-    font-size: 80px;
-  }
-  .hero__subtitle {
-    font-size: 20px;
-  }
-
-  .hero__button {
-    padding: 14px 61px;
-    font-weight: 700;
-    font-size: 18px;
+    &__button {
+      padding: 14px 61px;
+      font-weight: 700;
+      font-size: 18px;
+    }
   }
 
   .product {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-  .product__item {
-    gap: 10px;
+
+    &__item {
+      gap: 10px;
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
+
+    &__image {
+      max-width: 260px;
+      max-height: 206px;
+    }
+    &__title {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    &__button {
+      margin-top: 20px;
+      padding: 14px 90px;
+      font-size: 18px;
+    }
   }
 
-  .product__image {
-    max-width: 260px;
-    max-height: 206px;
-  }
-  .product__title {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-
-  .product__button {
-    margin-top: 20px;
-    padding: 14px 90px;
-    font-size: 18px;
-  }
-
-  .product__item:not(:last-child) {
-    margin-bottom: 50px;
-  }
   .contacts__title {
     font-size: 30px;
     margin-bottom: 20px;
@@ -128,34 +128,32 @@
 
   .contacts__map-wraper {
     height: 230px;
+    width: calc(100% - 260px);
   }
 
   .address__item:not(:last-child) {
     margin-bottom: 10px;
   }
 
-  .contacts__map-wraper {
-    width: calc(100% - 260px);
-  }
-
   .footer {
     padding-top: 40px;
     padding-bottom: 50px;
-  }
-  .footer__logo {
-    font-size: 46px;
-  }
-  .footer__content {
-    gap: 50px;
-  }
 
-  .footer .social-link {
-    width: 40px;
-    height: 40px;
-  }
+    &__logo {
+      font-size: 46px;
+    }
+    &__content {
+      gap: 50px;
+    }
 
-  .footer__copyright {
-    margin-top: 43px;
+    & .social-link {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__copyright {
+      margin-top: 43px;
+    }
   }
 }
 
@@ -182,6 +180,9 @@
     padding-bottom: 18px;
   }
 
+  .navigation__list {
+    gap: 10px;
+  }
   .navigation__link {
     font-size: 12px;
   }
@@ -202,29 +203,30 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    &__title {
+      font-size: 50px;
+    }
+    &__subtitle {
+      margin-top: 4px;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    &__button {
+      max-width: 290px;
+      font-weight: 700;
+      font-size: 18px;
+    }
   }
 
-  .hero__title {
-    font-size: 50px;
-  }
-  .hero__subtitle {
-    margin-top: 4px;
-    margin-bottom: 20px;
-    font-size: 20px;
-  }
-
-  .hero__button {
-    max-width: 290px;
-    font-weight: 700;
-    font-size: 18px;
-  }
   .product__item {
     flex-direction: column;
     align-items: center;
+    &:nth-child(2n) {
+      flex-direction: column;
+    }
   }
-  .product__item:nth-child(2n) {
-    flex-direction: column;
-  }
+
   .product__button {
     margin-top: 20px;
     width: 100%;
@@ -254,14 +256,14 @@
   .footer {
     padding-top: 30px;
     padding-bottom: 20px;
-  }
 
-  .footer__logo {
-    margin-bottom: 30px;
-  }
-  .footer__content {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    &__logo {
+      margin-bottom: 30px;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
   }
 }

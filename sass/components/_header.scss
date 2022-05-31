@@ -17,6 +17,34 @@
     padding-top: 20px;
     padding-bottom: 42px;
   }
+
+  &__contact {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: $first-color;
+    transition: color $main-animation, text-shadow $main-animation,
+      transform $main-animation;
+
+    &:hover,
+    &:focus,
+    &:hover > .header__phone-icon,
+    &:focus > .header__phone-icon {
+      color: $hover-color;
+      text-shadow: $main-shadow;
+      transform: scale(1.2);
+      fill: $hover-color;
+    }
+  }
+
+  &__phone-icon {
+    width: 24px;
+    height: 24px;
+
+    fill: $accent-color;
+    transition: fill $main-animation;
+  }
 }
 
 .logo {
@@ -53,32 +81,4 @@
     transform: scale(1.2);
     font-weight: 500;
   }
-}
-
-.header__contact {
-  justify-self: end;
-  display: flex;
-  align-items: center;
-  font-weight: 700;
-  color: $first-color;
-  transition: color $main-animation, text-shadow $main-animation,
-    transform $main-animation;
-}
-
-.header__phone-icon {
-  width: 24px;
-  height: 24px;
-
-  fill: $accent-color;
-  transition: fill $main-animation;
-}
-
-.header__contact:hover,
-.header__contact:focus,
-.header__contact:hover > .header__phone-icon,
-.header__contact:focus > .header__phone-icon {
-  color: $hover-color;
-  text-shadow: $main-shadow;
-  transform: scale(1.2);
-  fill: $hover-color;
 }

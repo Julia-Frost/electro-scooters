@@ -1,81 +1,74 @@
 .product {
   padding-top: 120px;
   padding-bottom: 120px;
-}
 
-.product__item {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-.product__item:not(:last-child) {
-  margin-bottom: 120px;
-}
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    &:not(:last-child) {
+      margin-bottom: 120px;
+    }
 
-.product__item:nth-child(2n) {
-  flex-direction: row-reverse;
-}
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+  }
+  &__image {
+    max-width: 470px;
+    max-height: 370px;
+  }
 
-.product__image {
-  max-width: 470px;
-  max-height: 370px;
-}
+  &__wrap {
+    max-width: 582px;
+  }
+  &__title {
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
 
-.product__wrap {
-  max-width: 582px;
-}
+  &__description {
+    line-height: 1.5;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  &__button {
+    padding: 23px 132px;
+    margin-top: 40px;
 
-.product__title {
-  font-size: 60px;
-  line-height: 1;
-  margin-bottom: 20px;
-}
+    font-weight: 700;
+    font-size: 26px;
 
-.product__description {
-  line-height: 1.5;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-}
+    background-color: $accent-color;
+    color: $second-color;
 
-// .product__wrap:hover .product__description {
-//   -webkit-line-clamp: unset;
-// }
+    border: 4px solid transparent;
+    border-radius: 8px;
+    box-shadow: $main-shadow;
 
-.product__button {
-  padding: 23px 132px;
-  margin-top: 40px;
+    transition: background-color $main-animation, color $main-animation,
+      box-shadow $main-animation, border-color $main-animation,
+      animation $main-animation;
 
-  font-weight: 700;
-  font-size: 26px;
+    &:focus {
+      box-shadow: $hover-shadow;
+      border-color: $second-color;
+      outline: 0;
+    }
+    &:hover {
+      background-color: $hover-color;
+      box-shadow: $hover-shadow;
+    }
 
-  background-color: $accent-color;
-  color: $second-color;
-
-  border: 4px solid transparent;
-  border-radius: 8px;
-  box-shadow: $main-shadow;
-
-  transition: background-color $main-animation, color $main-animation,
-    box-shadow $main-animation, border-color $main-animation,
-    animation $main-animation;
-}
-
-.product__button:focus {
-  box-shadow: $hover-shadow;
-  border-color: $second-color;
-  outline: 0;
-}
-.product__button:hover {
-  background-color: $hover-color;
-  box-shadow: $hover-shadow;
-}
-
-.product__button:active {
-  background-color: $second-color;
-  box-shadow: $hover-shadow;
-  color: $first-color;
+    &:active {
+      background-color: $second-color;
+      box-shadow: $hover-shadow;
+      color: $first-color;
+    }
+  }
 }

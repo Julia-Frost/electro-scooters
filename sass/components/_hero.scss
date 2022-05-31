@@ -6,46 +6,45 @@
   background-position: center;
   padding-top: 220px;
   padding-bottom: 120px;
-}
 
-.hero__title {
-  font-size: 130px;
-}
+  &__title {
+    font-size: 130px;
+  }
 
-.hero__subtitle {
-  font-size: 26px;
-  color: $first-color;
-  margin-top: 10px;
-  margin-bottom: 60px;
-}
+  &__subtitle {
+    font-size: 26px;
+    color: $first-color;
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+  &__button {
+    padding: 23px 90px;
 
-.hero__button {
-  padding: 23px 90px;
+    font-weight: 700;
+    font-size: 26px;
 
-  font-weight: 700;
-  font-size: 26px;
+    border: 4px solid transparent;
+    border-radius: 8px;
 
-  border: 4px solid transparent;
-  border-radius: 8px;
+    background-color: $first-color;
+    color: $second-color;
 
-  background-color: $first-color;
-  color: $second-color;
+    transition: background-color $main-animation, box-shadow $main-animation,
+      border-color $main-animation, animation $main-animation;
 
-  transition: background-color $main-animation, box-shadow $main-animation,
-    border-color $main-animation, animation $main-animation;
-}
+    &:focus {
+      box-shadow: $hover-shadow;
+      border-color: $accent-color;
+      outline: 0;
+    }
+    &:hover {
+      background-color: $hover-color;
+      box-shadow: $hover-shadow;
+    }
 
-.hero__button:focus {
-  box-shadow: $hover-shadow;
-  border-color: $accent-color;
-  outline: 0;
-}
-.hero__button:hover {
-  background-color: $hover-color;
-  box-shadow: $hover-shadow;
-}
-
-.hero__button:active {
-  background-color: $accent-color;
-  box-shadow: $hover-shadow;
+    &:active {
+      background-color: $accent-color;
+      box-shadow: $hover-shadow;
+    }
+  }
 }
