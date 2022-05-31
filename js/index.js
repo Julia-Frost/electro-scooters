@@ -103,6 +103,7 @@ const createModal = (title, description) => {
 <path d="M23.75 8.0125L21.9875 6.25L15 13.2375L8.0125 6.25L6.25 8.0125L13.2375 15L6.25 21.9875L8.0125 23.75L15 16.7625L21.9875 23.75L23.75 21.9875L16.7625 15L23.75 8.0125Z" fill="#00654E"/>
 </svg>
 `,
+    ariaLabel: "Закрыть модальное окно",
   });
 
   overlayElem.addEventListener("click", (event) => {
