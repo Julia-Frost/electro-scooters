@@ -529,6 +529,7 @@ svg {
   background-color: transparent;
 }
 .modal__title {
+  width: 250px;
   font-size: 30px;
   line-height: 1.4;
   text-align: center;
@@ -640,6 +641,7 @@ svg {
   }
 
   .modal__title {
+    width: 150px;
     font-size: 16px;
   }
 
